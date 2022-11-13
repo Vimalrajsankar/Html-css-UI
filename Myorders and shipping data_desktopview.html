@@ -1,0 +1,251 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Assignment</title> 
+     
+    <script src="https://kit.fontawesome.com/81ef6dd811.js" crossorigin="anonymous"></script> 
+    <style> 
+    .responsive{ 
+        display: flex; 
+        flex-wrap: wrap; 
+        flex-direction: row; 
+    } 
+     
+    img{ 
+        width: 200px; 
+    } 
+    button{ 
+        color: rgb(8, 142, 8); 
+        background-color: rgb(184, 225, 184); 
+        border-radius: 20px; 
+        padding: 5px; 
+        border: none; 
+        position: relative; 
+        left: 10px; 
+        bottom: 15px; 
+        font-size: large; 
+         
+    } 
+     
+     
+    .orders{ 
+        border: 0.5px solid lightgray; 
+        width: 350px; 
+        height: 800px; 
+        line-height: 10px; 
+        position: relative; 
+       top: 10px; 
+         
+    } 
+    h4{ 
+        border: 1px solid black; 
+        background-color: rgb(228, 224, 224); 
+        margin-left: 10px; 
+        margin-right: 25px; 
+        padding: 10px; 
+        font-size: larger; 
+        border: none; 
+        border-radius: 10px; 
+    } 
+    .p1{ 
+        border: 1px solid lightskyblue; 
+        background-color: rgb(213, 242, 251); 
+        margin-left: 30px; 
+        margin-right: 25px; 
+        padding: 10px; 
+        font-size: larger; 
+        /* border: none; */ 
+        border-radius: 10px; 
+    } 
+    .p2{ 
+        border: 0.1px solid rgb(180, 177, 177); 
+        background-color: white; 
+        margin-left: 30px; 
+        margin-right: 25px; 
+        padding: 10px; 
+        font-size: larger; 
+        /* border: none; */ 
+        border-radius: 10px; 
+    } 
+    table{ 
+        height: 800px; 
+        border: 0.5px solid lightgrey; 
+    } 
+    .para{ 
+        display: none; 
+    } 
+    .head.active ::after{ 
+        content: ""; 
+    } 
+     
+     
+    th{ 
+         
+        padding: 10px; 
+        padding-left: 50px; 
+     
+    } 
+    td{ 
+        padding: 10px; 
+        padding-left: 50px; 
+    } 
+</style> 
+</head> 
+<body> 
+<div class="responsive"> 
+    <div> 
+    <img src="/loremipsum.png" > <button >COMPLIANT</button> 
+    <div class="orders"> 
+        <h4 class="head">Open Orders <span style="margin-left: 100px;"></span><i class="fa-solid fa-angle-up"></i></h4> 
+    <div class="para"> 
+        <p class="p1">New Orders<span style="margin-left: 100px;"></span>12 </p> 
+         <p class="p2">SC Available to sched..<span style="margin-left: 14px;"></span>12 </p> 
+         <p class="p1">Sitecheck Scheduled<span style="margin-left: 30px;"></span>07 </p> 
+         <p class="p2">Change Order<span style="margin-left: 80px;"></span>12 </p> 
+         <p class="p2">On Orders<span style="margin-left: 110px;"></span>06 </p> 
+         <p class="p1">Delivered/LW<span style="margin-left: 80px;"></span>04 </p> 
+         <p class="p2">Door Received<span style="margin-left: 70px;"></span>04 </p> 
+         <p class="p2">Installed/LW<span style="margin-left: 90px;"></span>07 </p> 
+         <p class="p2">Service Form Sent<span style="margin-left: 45px;"></span>09</p> 
+         <p class="p2">Closed<span style="margin-left: 135px;"></span>02</p> 
+         <p class="p1">Payment<span style="margin-left: 120px;"></span>28</p> 
+     </div> 
+         <h4>Completed Orders <span style="margin-left: 50px;"></span><i class="fa-solid fa-angle-down"></i></h4> 
+         <h4>Cancelled Orders <span style="margin-left: 60px;"></span><i class="fa-solid fa-angle-down"></i></h4> 
+    </div> 
+</div> 
+<div> 
+    <h2>Open Orders | SC Sitecheck (49)</h2> 
+    <table> 
+        <thead> 
+            <tr> 
+                <th>PO # <i class="fa-solid fa-arrow-down"></i></th> 
+                <th>CUSTOMER DETAILS <i class="fa-solid fa-arrow-down"></i></th> 
+                <th>ORDER TYPE <i class="fa-solid fa-arrow-down"></i></th> 
+                <th>CITY</th> 
+                <th>PHONE#</th> 
+                <th>STATUS <i class="fa-solid-fa-arrow-down"></i></th> 
+                <th></th> 
+            </tr> 
+        </thead> 
+        <tbody> 
+            <div id="h"> 
+            <tr> 
+                <td>42521983</td> 
+                <td>Bement Jared <br> 144 Curt Shores,50,Madison.,</td> 
+                <td>Garage Door Install</td> 
+                <td>Hixson</td> 
+                <td>123 456 7890</td> 
+                <td>SC Sitecheck</td> 
+                <td><i class="fa fa-clock-o"></i></td> 
+            </tr> 
+        </div> 
+            <tr> 
+                <td>42521983</td> 
+                <td>Johnson <br> 144 Curt Shores,50,Madison.,</td> 
+                <td>Garage Door Install</td> 
+                <td>Hixson</td> 
+                <td>123 456 7890</td> 
+                <td>Order Sent to Clopay</td> 
+                <td><i class="fa-regular fa-file-lines"></i>&nbsp; &nbsp;<i class="fa fa-clock-o"></i></td> 
+            </tr> 
+            <tr> 
+                <td>42521983</td> 
+                <td>Bement Jared <br> 144 Curt Shores,50,Madison.,</td> 
+                <td>Garage Door Install</td> 
+                <td>Hixson</td> 
+                <td>123 456 7890</td> 
+                <td>SC Sitecheck</td> 
+                <td><i class="fa fa-clock-o"></i></td> 
+            </tr> 
+            <tr> 
+                <td>42521983</td> 
+                <td>Johnson <br> 144 Curt Shores,50,Madison.,</td> 
+                <td>Garage Door Install</td> 
+                <td>Hixson</td> 
+                <td>123 456 7890</td> 
+                <td>Order Sent to Clopay</td> 
+                <td><i class="fa-regular fa-file-lines"></i>&nbsp; &nbsp;<i class="fa fa-clock-o"></i></td> 
+            </tr> 
+            <tr> 
+                <td>42521983</td> 
+                <td>Bement Jared <br> 144 Curt Shores,50,Madison.,</td> 
+                <td>Garage Door Install</td> 
+                <td>Hixson</td> 
+                <td>123 456 7890</td> 
+                <td>SC Sitecheck</td> 
+                <td><i class="fa fa-clock-o"></i></tr> 
+            </tr> 
+            <tr> 
+                <td>42521983</td> 
+                <td>Johnson <br> 144 Curt Shores,50,Madison.,</td> 
+                <td>Garage Door Install</td> 
+                <td>Hixson</td> 
+                <td>123 456 7890</td> 
+                <td>Order Sent to Clopay</td> 
+                <td><i class="fa-regular fa-file-lines"></i>&nbsp; &nbsp;<i class="fa fa-clock-o"></i></td> 
+            </tr> 
+            <tr> 
+                <td>42521983</td> 
+                <td>Bement Jared <br> 144 Curt Shores,50,Madison.,</td> 
+                <td>Garage Door Install</td> 
+                <td>Hixson</td> 
+                <td>123 456 7890</td> 
+                <td>SC Sitecheck</td> 
+                <td><i class="fa fa-clock-o"></i></td> 
+            </tr> 
+            <tr> 
+                <td>42521983</td> 
+                <td>Johnson <br> 144 Curt Shores,50,Madison.,</td> 
+                <td>Garage Door Install</td> 
+                <td>Hixson</td> 
+                <td>123 456 7890</td> 
+                <td>Order Sent to Clopay</td> 
+                <td><i class="fa-regular fa-file-lines"></i>&nbsp; &nbsp;<i class="fa fa-clock-o"></i></td> 
+            </tr> 
+            <tr> 
+                <td>42521983</td> 
+                <td>Bement Jared <br> 144 Curt Shores,50,Madison.,</td> 
+                <td>Garage Door Install</td> 
+                <td>Hixson</td> 
+                <td>123 456 7890</td> 
+                <td>SC Sitecheck</td> 
+                <td><i class="fa fa-clock-o"></i></td> 
+            </tr> 
+            <tr> 
+                <td>42521983</td> 
+                <td>Johnson <br> 144 Curt Shores,50,Madison.,</td> 
+                <td>Garage Door Install</td> 
+                <td>Hixson</td> 
+                <td>123 456 7890</td> 
+                <td>Order Sent to Clopay</td> 
+                <td><i class="fa-regular fa-file-lines"></i>&nbsp; &nbsp;<i class="fa fa-clock-o"></i></td> 
+            </tr> 
+        </tbody> 
+    </table> 
+</div> 
+</div> 
+<script> 
+    const acc=document.getElementsByClassName("head") 
+    var i; 
+    for(i=0;i<acc.length;i++){ 
+        acc[i].addEventListener("click",function(){ 
+            this.classList.toggle("active") 
+            var x=this.nextElementSibling 
+            if(x.style.display === "block"){ 
+                 x.style.display="none" 
+            } 
+            else{ 
+                x.style.display="block" 
+            } 
+        }) 
+    } 
+ 
+     
+</script> 
+     
+</body> 
+</html>
