@@ -2,8 +2,372 @@
 <html lang="en">
 <head>
     <title>Beasnt technology Enquiry Management system</title>
-    <link rel="stylesheet" href="./besant.css">
+    
     <script src="https://kit.fontawesome.com/aa6cdb79a3.js" crossorigin="anonymous"></script>
+    <style>
+      *{
+    padding: 0%;
+    margin: 0%;
+   
+}
+.marquee{
+    padding: 3px 3px;
+    background-color: orange;
+    font-family: sans-serif;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-color: black;
+    font-family:'Pacifico', cursive;
+    margin-top: 3px;
+    padding: 13px;
+    
+}
+.nav .contact a{
+    text-decoration-line: none;
+    box-sizing: content-box;
+    color: white;
+}
+.nav .contact{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+.nav .fonts {
+    color: white;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+     
+}
+.nav .fonts a{
+    color: white;
+}
+ .nav a:hover{
+    color: red;
+ }
+ .navbar{
+    display: grid;
+    grid-template-columns: 20% 65% 15%;
+    padding: 10px;
+    background-color:rgb(137, 196, 202);
+ }
+ .title h3{
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: x-large;
+    color: rgb(2, 97, 56);
+ }
+ .address a{
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    margin: 0px 25px;
+    font-size: large;
+    font-weight:400;
+    font-family: sans-serif;
+ }
+ .address{
+    padding: 10px;
+ }
+ .enq-btn button{
+    height: 30px;
+    width: 80px;
+    margin-left: 20px;
+    background-color:rgb(3, 163, 94) ;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+ }
+ .address a:hover{
+    background-color: white;
+    color: red;
+    font-size:large;
+
+ }
+ .bgi{
+    background-image: url("./images/pexels-julia-m-cameron-4144527.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 500px;
+    position: relative;
+ }
+.cont{
+    padding-top: 100px;
+    margin-left: 100px;
+    height: 350px;
+    width: 520px;
+    color: white;
+}
+.cont h1{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.cont h4{
+    font-size: large;
+    margin-top: 10px;
+}
+.cont p{
+    margin-top: 25px;
+}
+.cont button{
+    background-color:rgb(3, 163, 94)  ;
+    font-size: medium;
+    font-weight:bold ;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border: 0ch;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+.cont button:hover{
+    color: red;
+}
+.key{
+    text-align: center;
+    padding: 40px;
+}
+.key p{
+    margin-top: 15px;
+}
+.k-features{
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22% ;
+    grid-gap: 3%;
+    padding-left: 40px;
+}
+.k1{
+    height:200px;
+    background-color:rgb(3, 163, 94)  ;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 25px;
+    padding: 0px 20px;
+    color: white;
+    box-shadow: 2px 2px 2px 5px rgb(230, 229, 229);
+}
+.kbtn{
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    border: none;
+    position: relative;
+    bottom: 40px;
+    font-size: large;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.k1 h4{
+    position: relative;
+    bottom: 30px;
+}
+.k1 p{
+    position: relative;
+    bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.k1:hover{
+    background-color: white;
+    color: black;
+}
+.course{
+    display: grid;
+    grid-template-columns:30% 30% 30%;
+    grid-gap: 3%;
+    text-align: center;
+    padding-left: 30px;
+    font-family: sans-serif;
+}
+.c-sub1 {
+    margin-top: 30px;
+}
+.c-sub1 h3{
+    background-color:rgb(6, 255, 118) ;
+    padding:  10px;
+    font-weight: bold;
+    color: white;
+}
+.c-sub2{
+    padding: 20px 15px;
+    box-shadow: 3px 3px 3px 4px rgb(190, 242, 254);
+    height: 230px;
+}
+.c-sub2 p{
+    margin-top: 20px;
+}
+.c-sub2 button{
+    background-color: rgb(3, 163, 94);
+    padding: 5px 8px;
+    margin-top: 40px;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+.c-sub2 button:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.c-sub2 p:nth-child(2){
+    color: rgb(255, 255, 0);
+}
+.c-sub2 p:nth-child(3){
+    color: rgb(83, 84, 84);
+}
+.footer{
+    display: grid;
+    grid-template-columns:  25% 25% 25% 25%;
+    background-color: rgb(235, 253, 254);
+    margin-top: 45px;
+    font-family: sans-serif;
+}
+.grad{
+    padding-left: 40px ;
+}
+.grad h3{
+    padding: 25px 0px;
+}
+.service{
+    padding-left: 45px;
+}
+.service h3{
+    padding: 25px 0px;
+}
+.service p{
+    padding: 10px 0px;
+}
+.grad span{
+    font-weight: bold;
+}
+.mail{
+    padding-left: 40px ;
+}
+.mail h3{
+    padding: 25px 0px;
+}
+.mail input{
+    height: 30px;
+    width: 200px;
+}
+.mail button{
+    height: 40px;
+    width: 40px;
+    color: black;
+    background-color:rgb(3, 163, 94) ;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.mail a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+.apply{
+    height: 400px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 50px;
+    left: 600px;
+    border-radius: 10px;
+    display: none;
+}
+.apply-close{
+    text-align: right;
+    color: red;
+    cursor: pointer;
+}
+.apply-content{
+    text-align: center;
+    line-height: 50px;
+}
+.apply-content input{
+    border: none;
+    border-bottom: 1px solid brown;
+    padding: 10px 10px;
+}
+.apply-content textarea{
+    border: none;
+    border-bottom: 1px solid brown;
+    padding: 10px 10px;
+}
+.apply-content button{
+    background-color: blue;
+    padding: 7px 20px;
+    border: none;
+    color: white;
+}
+.enquiry{
+    height: 500px;
+    width: 400px;
+    background-color: rgb(255, 249, 249);
+    position: absolute;
+    bottom: 20px;
+    left: 73%;
+    text-align: center;
+    font-family:sans-serif;
+    box-shadow: 5px 5px 5px  rgb(255, 241, 241);
+    display: none;
+}
+.enquiry p{
+    font-size: 22px;
+    font-weight: 200;
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+}
+.enquiry h2{
+    background-color: rgb(4, 179, 248);
+    padding: 10px 10px;
+    margin: 0px 20px;
+}
+.enquiry input{
+    margin-top: 25px;
+    height: 30px;
+    width: 300px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.select {
+    padding:8px 190px 8px 10px;
+    margin-top:25px ;
+    font-size: 15px;
+    border-bottom: 3px solid rgb(4, 179, 248);
+}
+.enquiry button{
+    padding: 13px 100px;
+    margin-top: 25px;
+    background-color: rgb(4, 179, 248);
+    border: 3px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.dropdown{
+    font-size:x-large ;
+    background-color: white;
+    width: 150px;
+    position: absolute;
+    left: 590px;
+    bottom: 417px;
+    display: none;
+}
+.dropdown p{
+    padding: 8px ;
+    font-family: sans-serif;
+    cursor:context-menu;
+}
+
+.dropdown p:hover{
+    background-color: rgb(26, 0, 0);
+    color: white;
+}
+
+
+    </style>
 </head>
 <body>
     <div class="marquee">
@@ -205,6 +569,41 @@
       </div>
 
     </div>
-    <script src="/besant.js"></script>
+    <script>
+      let conBtn=document.getElementById("cont-button")
+let Applycls=document.getElementById("apply-close")
+let applyBtn=document.getElementById("apply")
+ conBtn.onclick=function open(){
+    applyBtn.style.display="block";
+}
+Applycls.onclick=function close(){
+    applyBtn.style.display="none";
+}
+
+let enqBtn=document.getElementById("enquiry") 
+ function over(){
+    enqBtn.style.display="block"
+}
+function out(){
+    enqBtn.style.display="none"
+}
+let courses=document.getElementById("dropdown")
+ function onn(){
+    courses.style.display="block"
+}
+function off(){
+    courses.style.display="none"
+}
+
+
+
+function myFunction(){
+    location.href="aassignment.html"
+}
+
+function myFunc(){
+    location.href="submit.html"
+}
+    </script>
 </body>
 </html>
