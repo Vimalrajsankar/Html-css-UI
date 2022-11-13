@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Assignment</title> 
+    <script src="https://kit.fontawesome.com/81ef6dd811.js" crossorigin="anonymous"></script> 
+    <style> 
+        .first{ 
+            background-color: rgb(68, 68, 83); 
+            color: white; 
+            width: 400px; 
+            height: 80px; 
+            text-align: center; 
+            border-radius: 10px; 
+        } 
+        a{ 
+            position: relative; 
+            top: 30px; 
+            margin-left: 60px; 
+         
+        } 
+        input{ 
+            padding: 10px; 
+            width: 300px; 
+            text-align: right; 
+            margin-left: 70px; 
+            
+             
+        } 
+        img{ 
+    width: 200px; 
+} 
+button{ 
+    color: rgb(15, 156, 10); 
+    background-color: rgb(184, 225, 184); 
+    border-radius: 20px; 
+    padding: 5px; 
+    border: none; 
+    position: relative; 
+    left: 10px; 
+    bottom: 15px; 
+    font-size: large; 
+     
+} 
+     .orders{ 
+    border: 0.5px solid lightgray; 
+    width: 400px; 
+    line-height: 10px; 
+    position: relative; 
+   top: 10px; 
+     
+} 
+h4{ 
+    border: 1px solid black; 
+    background-color: rgb(228, 224, 224); 
+    margin-left: 10px; 
+    margin-right: 25px; 
+    padding: 10px; 
+    font-size: larger; 
+    border: none; 
+    border-radius: 10px; 
+} 
+        .p1{ 
+    border: 1px solid lightskyblue; 
+    background-color: rgb(213, 242, 251); 
+    margin-left: 30px; 
+    margin-right: 25px; 
+    padding: 10px; 
+    font-size: larger; 
+     
+    border-radius: 10px; 
+} 
+ 
+.p2{ 
+    border: 0.1px solid rgb(180, 177, 177); 
+    background-color: white; 
+    margin-left: 30px; 
+    margin-right: 25px; 
+    padding: 10px; 
+    font-size: larger; 
+     
+    border-radius: 10px; 
+} 
+.para{ 
+    display: none; 
+} 
+.head.active ::after{ 
+    content: ""; 
+} 
+ 
+    </style> 
+</head> 
+<body> 
+    <div class="first"> 
+         
+            <a style="border-bottom: 5px solid yellow;padding-bottom:20px;">MY ORDERS</a> 
+            <a style="color: rgb(157, 155, 155);">WHAT'S NEW</a> 
+         
+    </div> 
+    <div class="main"> 
+        <div > 
+            <img src="/loremipsum.png" > <button >COMPLIANT</button> 
+        </div> 
+        <input type="text" placeholder="Search by order id,cust name,mobile num.."> 
+        <div class="orders"> 
+            <h4 class="head">Open Orders <span style="margin-left: 190px;"></span><i class="fa-solid fa-angle-up"></i></h4> 
+        <div class="para">     
+            <p class="p1">New Orders<span style="margin-left: 160px;"></span>12 &nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></p> 
+             <p class="p1">SC Available to sched..<span style="margin-left: 74px;"></span>09 &nbsp;&nbsp; <i class="fa-solid fa-angle-right"></i> </p> 
+             <p class="p1">Sitecheck Scheduled<span style="margin-left: 95px;"></span>07 &nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></p> 
+             <p class="p2">Change Order<span style="margin-left: 145px;"></span>12 &nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></p> 
+             <p class="p2">On Order<span style="margin-left: 180px;"></span>06 &nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></p> 
+             <p class="p2">Shipment Status<span style="margin-left: 130px;"></span>04 &nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i> </p> 
+             <p class="p2">Delivered/LW<span style="margin-left: 145px;"></span>04 &nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></p> 
+             <p class="p2">Schedule Install<span style="margin-left: 130px;"></span>04 &nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i> </p> 
+             <p class="p2">Installed/LW<span style="margin-left: 155px;"></span>07 &nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></p> 
+             <p class="p2">Service Form Sent<span style="margin-left: 110px;"></span>09 &nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></p> 
+             <pclass="p2">Awaiting For Approval<span style="margin-left:80px;"></span>02 &nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></p> 
+             <p class="p1">Payment<span style="margin-left:180px;"></span>28 &nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></p> 
+         </div>      
+             <h4>Completed Orders <span style="margin-left: 140px;"></span><i class="fa-solid fa-angle-down"></i></h4> 
+             <h4>Cancelled Orders <span style="margin-left: 150px;"></span><i class="fa-solid fa-angle-down"></i></h4> 
+        </div> 
+    </div> 
+    <script> 
+        const acc=document.getElementsByClassName("head") 
+        var i; 
+        for(i=0;i<acc.length;i++){ 
+            acc[i].addEventListener("click",function(){ 
+                this.classList.toggle("active") 
+                var x=this.nextElementSibling 
+                if(x.style.display === "block"){ 
+                     x.style.display="none" 
+                } 
+                else{ 
+                    x.style.display="block" 
+                } 
+            }) 
+        } 
+     
+         
+    </script> 
+ 
+</body> 
+</html>
